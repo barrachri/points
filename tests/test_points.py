@@ -41,5 +41,4 @@ def test_main_return_max_distance():
     points = [(1, 4), (4, 4), (3, 2), (5, 1)]
 
     response = main(points)
-    print(response)
     assert response["max_distance"] == {"distance": 5.0, "points": ((5, 1), (1, 4))}
