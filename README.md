@@ -1,3 +1,18 @@
+# Task
 
+We need to write an application that while accept a list of pair off points.
 
-expertlead Coding Challenge\n\n  |\n  |\n  | + (1,4)   + (4,4)\n  |\n  |\t \n  |   \t+ (3,2)\n  |                   \t+ (5,1)\n  +----------------------------------\n   Figure: Example Points\n\n\nDesign an application that, given a set of coordinates [(x1,y1), .., (xn,yn)], determines:\n\n - the two closest points between each other\n - the two most distant points between each other\n\nUse your knowledge of Clean and Maintainable Code to create an application with automated tests.\n\nStart with tests or implementation, whatever is better for you.\n
+And calculate the closest and the most distance one.
+
+The app should return a response like this one
+
+```
+{
+    # points received
+    'points': [(1, 4), (4, 4), (3, 2), (5, 1)],
+    # closest pair of points
+    'min_distance': {'distance': 2.23606797749979, 'points': ((5, 1), (3, 2))},
+    # most distant pair of points
+    'max_distance': {'distance': 5.0, 'points': ((5, 1), (1, 4))}
+    }
+```

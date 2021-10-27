@@ -1,10 +1,9 @@
 from math import dist
-from typing import List, Tuple
 
-points = [(1,2), (3,3), (5,4)]
 
 def calculate_distance(a, b):
     return dist(a, b)
+
 
 def main(points):
     data = {}
@@ -26,15 +25,7 @@ def main(points):
 
         return {
             "points": points,
-            "min_distance": {
-                "distance": min_distance,
-                "points": min_pair
-            },
-            "max_distance": {
-                "distance": max_distance,
-                "points": max_pair
-            }
+            "min_distance": {"distance": min_distance, "points": min_pair},
+            "max_distance": {"distance": max_distance, "points": max_pair},
         }
-    return {
-        "points": points
-    }
+    return {"points": points}
