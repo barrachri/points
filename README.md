@@ -1,6 +1,6 @@
 # Task
 
-We need to write an application that accepts a list of pair of 2-dimensional points and calculates the closest and the most distance one.
+We need to write an application that accepts a list of 2-dimensional points and calculates the closest and the most distance one.
 
 The app should return a response like this one:
 
